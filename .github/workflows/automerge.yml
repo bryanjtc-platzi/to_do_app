@@ -7,7 +7,5 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - uses: fastify/github-action-merge-dependabot@v2.7.1
-        with:
-          target: minor
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge
+        uses: KeisukeYamashita/auto-renovate-pull-request-merge@v1
